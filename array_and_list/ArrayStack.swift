@@ -1,3 +1,10 @@
+//
+//  ArrayQueue.swift
+//  SwiftPlaygournd
+//
+//  Created by CHENGGUO PIAO on 2024/11/29.
+//
+
 struct ArrayStack<T> {
    var items: [T?] = []
    var count = 0

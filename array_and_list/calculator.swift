@@ -1,3 +1,10 @@
+//
+//  ArrayQueue.swift
+//  SwiftPlaygournd
+//
+//  Created by CHENGGUO PIAO on 2024/11/28.
+//
+
 import Foundation
 
 let OPERATOR_PLUS = "+"
@@ -43,12 +50,9 @@ struct OperatorPriority {
    var operandCount: Int
 }
 
-// var expression = "1 + 2 * 3 + 10 / 2 - 3" // 9
 var expression = " 1 + 2 * 3 + 10 / 2"  // 12
 var operandStack = ArrayStack<Double>(size: 10)
 var operatorStack = ArrayStack<String>(size: 20)
-
-// expression = expression.filter { !$0.isWhitespace }
 
 var priorityMap: [String: OperatorPriority] = [:]
 priorityMap[OPERATOR_PLUS] = OperatorPriority(name: OPERATOR_PLUS, priority: 1, operandCount: 2)

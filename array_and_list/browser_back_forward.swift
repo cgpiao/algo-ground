@@ -1,3 +1,10 @@
+//
+//  ArrayQueue.swift
+//  SwiftPlaygournd
+//
+//  Created by CHENGGUO PIAO on 2024/11/30.
+//
+
 struct ArrayStack<T> {
    var items: [T?] = []
    var count = 0
@@ -57,9 +64,3 @@ class Browser {
    }
 }
 
-let myBrowser = Browser()
-myBrowser.navigate(url: "google.com")
-
-print("back: \(myBrowser.back() ?? "nil")")
-print("back: \(myBrowser.forward() ?? "nil")")
-print("back: \(myBrowser.back() ?? "nil")")

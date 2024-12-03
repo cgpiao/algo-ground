@@ -62,11 +62,3 @@ private class Node<T: Comparable> {
       self.next = next
    }
 }
-
-let stack1 = LinkedStack<Int>()
-stack1.push(1)
-stack1.push(2)
-stack1.push(3)
-for item in stack1 {
-    print("item: \(item)")
-}
