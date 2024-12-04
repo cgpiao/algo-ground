@@ -8,9 +8,9 @@
 let cacheSize = 3
 
 class LruList<T: Comparable> {
-   var first: Node<T>?
-   var last: Node<T>?
-   var size: Int = 0
+   private var first: Node<T>?
+   private var last: Node<T>?
+   private var size: Int = 0
    func add(data: T) {
       if size == 0 {
          let node = Node(nil, data, nil)
@@ -57,7 +57,7 @@ class LruList<T: Comparable> {
       return nil
    }
 }
-class Node<T: Comparable> {
+private class Node<T: Comparable> {
    var prev: Node<T>?
    var next: Node<T>?
    var data: T
