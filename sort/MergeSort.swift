@@ -19,7 +19,6 @@ func merge(_ arr: inout [Int], _ begin: Int, _ middle: Int, _ end: Int) {
    }
    var i = 0, j = 0
    var k = begin
-   print("leftArr: \(leftArr); rightArr: \(rightArr); leftSize: \(leftSize)")
    while i < leftSize && j < rightSize {
       if leftArr[i] <= rightArr[j] {
          arr[k] = leftArr[i]
